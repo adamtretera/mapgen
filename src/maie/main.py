@@ -2,10 +2,12 @@ from maie.playground import Playground2D
 from maie.worlds.wfc_world import WfcWorld, WfcWorldConfig
 from maie.worlds.uuworld import UUWorld, UUWorldConfig
 from maie.worlds.poisson_world import PoissonWorld, PoissonWorldConfig
+from maie.worlds.age_world import AgeWorld, AgeWorldConfig
 
 
 def main():
-    world = UUWorld(UUWorldConfig())
+    world = AgeWorld(AgeWorldConfig())
+    # world = UUWorld(UUWorldConfig())
     # world = PoissonWorld(PoissonWorldConfig())
     # cfg = WfcWorldConfig()
     # cfg.tileset = "city"
